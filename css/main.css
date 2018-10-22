@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Abel:400,500|Oswald:300');
+
+/* TEXT ELEMENETS */
+
+body {
+    font-family: 'Oswald', 'Helvetica Neue', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    color: black;
+}
+
+h2 {
+    font-family: 'Abel', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* SECTIONS */
+
+.point {
+    background: seagreen;
+    position: relative;
+    z-index: 1;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+  
+.point:before {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 0;
+    transform: skewY(2.0deg);
+    transform-origin: 100% 0;
+}
+    
+.point:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    transform: skewY(2.0deg);
+    transform-origin: 100%;
+}
+
+footer {
+    font-variant: small-caps;
+    background-color: rgb(4, 104, 25);
+}
+
+/* SPECIFIC ELEMENTS */
+
+.shippu {
+    color: #000000;
+}
+
+#About, #Photography {
+    background-color: white;
+}
+
+.nav-item {
+    font-family: 'Abel', Arial, Helvetica, sans-serif;
+    text-rendering: auto;
+    font-weight: 400;
+    font-variant-caps: titling-caps;
+    line-height: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(12, 12, 101);
+}
